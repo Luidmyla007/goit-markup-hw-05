@@ -799,12 +799,11 @@ margin-bottom: 30px;
     .header-link-contact:focus .header-icon-second {
         fill: #2196F3;
         }
-    
+
+            
 .top-text-wrap{ 
     position: relative; 
  } 
-
-
 
 .top-text{ 
     position: absolute; 
@@ -820,13 +819,14 @@ padding-top: 63px;
 padding-left: 24px;
 padding-right: 24px;
  transform: translateY(100%);
+  transition-property: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 } 
 
 .picture-box:hover, .top-text{
     transform: translateY(0);
 }
-
-
 
 .action-wrap{
     position: relative;
