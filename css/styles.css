@@ -114,13 +114,7 @@ h1,h2,h3,h4,h5,h6,p{
    list-style: none;
 }
 
-/* header styles */
 
-/* .header.container{ */
-    /* border-bottom-width: 1px; */
-  /* border-bottom-style: solid; */
-  /* border-bottom-color: #757575; */
-/* } */
 
 .logo{
     display: block;
@@ -172,17 +166,9 @@ h1,h2,h3,h4,h5,h6,p{
     text-decoration: none;
     
 }
-/* .curent-port:hover, .curent-port:focus{ */
-    /* color:var(--accent-color) */
-/* } */
 
-/* .curent-st:hover, .curent-st:focus{ */
-    /* color:var(--accent-color) */
-/* } */
 .header-link-contact{
     display: flex;
-    /* width: 100%; */
-    /* height: 100%; */
     align-items: center;
     justify-content: center;
     color: var(--primary-text-color);
@@ -191,7 +177,7 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -376,17 +362,9 @@ letter-spacing: 0.03em;
     padding: 6px 22px;
 }
 
-/* .choice-all-name{ */
-    padding: 6px 25px;
-    
-/* } */
-
-/* .choice-web-name, .choice-application-name, .choice-design-name, .choice-marketing-name{ */
-    /* padding: 6px 22px; */
-/* } */
 
 .choice-all, .choice-web, .choice-applications, .choice-design,.choice-marketing{
-        transition-property: box-shadow, var(--background-color), var(--accent-color)
+    transition-property: box-shadow, background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -395,28 +373,29 @@ letter-spacing: 0.03em;
 .choice-all:hover, .choice-all:focus {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25); 
+   
 }
 
 .choice-web:hover, .choice-web:focus {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25);
 }
 .choice-applications:hover, .choice-applications:focus {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25);
 }
 .choice-design:hover, .choice-design:focus {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25);
 }
 .choice-marketing:hover, .choice-marketing:focus {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 14px 10px rgba(0, 0, 0, 0.25);
 }
 
 .card{
@@ -562,7 +541,7 @@ footer .logo-second{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: var(--accent-color);
+    transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
    }
@@ -707,14 +686,14 @@ margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: var(--accent-color);
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icon{
     fill: #AFB1B8;
-    transition-property: var(--accent-text-color);
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -738,11 +717,8 @@ margin-bottom: 30px;
 .client-item{
     width: 170px;
     height: 92px;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4%;
-    box-shadow: rgba(0, 0, 0, 0.25);
-    
 }
+
 
 .client-link{
     width: 100%;
@@ -750,14 +726,17 @@ margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: var(--accent-color);
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .client-icon{
    fill: #AFB1B8;
-   transition-property: var(--accent-color);
+   transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -779,7 +758,7 @@ margin-bottom: 30px;
     margin-right: 10px;
   width: 16px;
   height: 12px;
-  transition-property: var(--accent-color);
+  transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -789,7 +768,7 @@ margin-bottom: 30px;
     margin-right: 10px;
     width: 10px;
     height: 16px;
-    transition-property: var(--accent-color);
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -825,7 +804,7 @@ padding-top: 63px;
 padding-left: 24px;
 padding-right: 24px;
  transform: translateY(100%);
-  transition-property: translateY(0);
+  transition-property: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
@@ -833,6 +812,11 @@ padding-right: 24px;
 .picture-box:hover .top-text{ 
     transform: translateY(0);
 }
+
+.picture:focus .top-text{ 
+    transform: translateY(0); 
+
+
 
 .action-wrap{
     position: relative;
@@ -874,7 +858,7 @@ left: 0;
     min-height: 581px;
     background-color: #fff;
     transform: translate(-50%, -50%);
-    transition: opacity;
+    transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transform: translate(-50%, -50%);
@@ -886,6 +870,7 @@ transition:  cubic-bezier(0.0, 0.0, 1.0, 1.0)
     position: absolute;
     top: 10px;
     right: 10px;
+    padding: 0;
 display: flex;
 justify-content: center;
 background-color: transparent;
